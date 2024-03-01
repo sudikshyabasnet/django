@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- Add your stylesheets or additional head elements here -->
+</head>
+<body style="background-color:rgb(223, 150, 150);">
+    <h1 style="text-align:center">User Profile</h1>
+
+    {% if user %}
+    
+        <p style="text-align:center">Welcome, {{ user.username }}!</p>
+       
+        <p style="text-align:center" >Email: {{ user.email }}</p>
+        
+
+    {% else %}
+        <p>You need to be logged in to view this page.</p>
+    {% endif %}
+</body>
+</html>
